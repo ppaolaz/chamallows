@@ -559,6 +559,11 @@ header{
     footer img{
         width: 200px;
     }
+      
+    header img{
+        width:200px;
+        margin-top: 20px;
+    }
 
     .middle{
         font-size: 30pt;
