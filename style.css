@@ -1,0 +1,566 @@
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/DarkerGrotesque-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding:0;
+    font-family: Grotesk;
+}
+
+body{
+    background-color: #EFE3FD;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    background-color: #FFCCF2;
+    padding:20px;
+    justify-content: space-around;
+}
+  
+/* bg color */
+.topnav {
+    background-color: #FFCCF2;
+    margin-top: 20px;
+    overflow: hidden;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20pt;
+    margin: 0 5px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #ff92e4;
+    color: #1a1a1a;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 20pt;
+    border: none;
+    outline: none;
+    color: #1a1a1a;
+    padding: 8px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #ff92e4;
+    color: #1a1a1a;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* HOME ITEMS */
+
+  b{
+      color: #ff4dd2;
+  }
+  a{
+    color: #ff4dd2;
+}
+
+  .button{
+      background-color: #FFCCF2;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 20pt;
+      border: 2px solid #ff92e4;
+  }
+
+  .button a{
+      text-decoration: none;
+      font-family: Lancelot;
+      color: black;
+      transition: all 1s;
+  }
+
+  .section1{
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content:center;
+      padding: 5% 0;
+      font-size: 30pt;
+  }
+
+  .section1 ul{
+      font-size: 20pt;
+      margin-top: 20px;
+      list-style-image: url(images/list-style.png);
+  }
+
+  .section2{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    font-size: 30pt;
+  }
+
+  .section3{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0; 
+  }
+
+  .section3-item1{
+      text-align: center;
+      font-size: 20pt;
+      background-color:#FFCCF2 ;
+      padding: 10px 30px;
+  }
+
+  .section3-item2{
+      text-align: left;
+      background-image: url(images/scan&make.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+      font-size: 20pt;
+      line-height: 1;
+      margin-left: 3%;
+  }
+
+  .container{
+      display: inline-block;
+      width: 42%;
+      justify-content: right;
+      margin-top: 20%;
+      margin-left: 57%;
+      margin-right: 3%;
+      
+  }
+
+  .section3-item2 h3{
+      font-size: 40pt;
+      margin-bottom: 4px;
+  }
+
+  .section3-item1 img{
+      margin-top: 15px;
+  }
+
+  .section1 img{
+      float: left;
+      margin-right: 25px;
+  }
+
+  .section2 img{
+    float: left;
+    margin-right: 25px;
+}
+
+  .section2-item{
+    width: 80%;
+  }
+
+  .section1-item1{
+    width: 60%;
+  } 
+
+  .section1-item2{
+    width: 30%;
+    background-color: #FFCCF2;
+    padding: 40px 10px 10px 46px; 
+    display: inline-block;
+  }
+ 
+  .section1-item2 h4{
+    text-align: center;
+    position: relative;
+    right: 20px;
+  }
+
+  .recipe-item{
+      text-align: center;
+      font-size: 30pt;
+      padding: 5% 0;
+      background-color: #FFCCF2;
+  }
+
+  .recipe-item h1{
+      margin: 10px;
+  }
+
+  /* FONT CHANGE */
+
+  @font-face{
+      font-family: Lancelot;
+      src: url(fonts/Lancelot-Regular.ttf);
+  }
+
+
+  h4, .button{
+      font-family: Lancelot;
+  }
+    /* FOOTER */
+
+  .content-wrap {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  footer {
+    background: #FFCCF2;
+    color: #1a1a1a;
+    font-size: 20pt;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-list a span{
+    padding: 5px;
+    
+
+  }
+
+  /* RECIPES */
+
+  .recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recipe1 img{
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  .recipe1{
+      font-size: 1.5rem;
+      background-color:#FFCCF2 ;
+      padding: 3%;
+      margin: 3%;
+      width:30rem;
+  }
+
+  #upload-recipe{
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  /* STOREEES */
+
+  .store1{
+    font-size: 1.5rem;
+    background-color:#FFCCF2 ;
+    padding: 3%;
+    margin: 3%;
+    width:37rem;
+  }
+
+  .store1 img{
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  #sold-out{
+      color: red;
+  }
+
+  .middle{
+      text-align: center;
+      font-size: 40pt;
+  }
+
+  /*ARTICLE*/
+
+  .article{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .article h1{
+      font-size: 40pt;
+      text-align: center;
+  }
+  .article h4{
+    font-size: 15pt;
+    text-align: center;
+}
+
+.article div{
+    padding: 100px 10px;
+    margin: 10px auto;
+    width: 100%;
+    background-image: url(images/haribo-article1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article p{
+    margin: 30px 0;
+    font-size: 20pt;
+    line-height: 0.8;
+    text-align: justify;
+}
+
+.article ul{
+    margin-top: 20px;
+    font-size: 20pt;
+    line-height: 1;
+    text-align: justify;
+    list-style-image: url(images/list-style.png);
+}
+
+.packaging1{
+    display: block;
+    padding: 100px 10px;
+    margin: 10px auto;
+    width: 50%;
+    background-image: url(images/chamallow-pack.jpg);
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+
+.packaging2{
+    display: block;
+    padding: 100px 10px;
+    margin: 10px auto;
+    width: 50%;
+    background-image: url(images/chamallow-pack1.jpg);
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+
+.packaging3{
+    display: block;
+    padding: 100px 10px;
+    margin: 10px auto;
+    width: 50%;
+    background-image: url(images/chamallow-pack2.jpg);
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+
+.packaging4{
+    display: block;
+    padding: 100px 10px;
+    margin: 10px auto;
+    width: 50%;
+    background-image: url(images/chamallow-pack3.jpg);
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+
+/* TRANSITIONS */
+
+.button :hover{
+    transform: scale(1.2);
+    padding: 7px 5px;
+    border-radius: 25px;
+}
+
+
+
+
+  /* TRYING TO MAKE IT RESPONSIVE */
+
+  @media screen and (max-width:1450px) {
+      .section3{
+          display: block;
+          width: 80%;
+      }
+      .section3-item2{
+          margin: 5% 0;
+      }
+      .container{
+          margin-top:10%;
+          margin-left: 50%;
+          margin-bottom: 10%;
+          margin-right: 3%;
+      }
+  }
+
+  @media screen and (max-width:1090px){
+      .contact-list{
+          display: block;
+      }
+  }
+
+  @media screen and (max-width:920px) {
+      .section1{
+          display: inline-block;
+          font-size: 20pt;
+      }
+      .section1-item2{
+          width: 80%;
+          margin-left: 5%;
+          margin-top: 5%;
+      }
+      .section1-item1{
+        width: 80%;
+        margin-left: 5%;
+      }
+      .section3-item1 img{
+          width: 300px;
+      }
+      .recipe-item h1{
+          font-size: 30pt;
+      }
+
+  }
+
+  @media screen and (max-width:590px) {
+      .button{
+          font-size: 15pt;
+      }
+      .section1-item1 img{
+          width:180px;
+      }
+      .container h3{
+          font-size: 30pt;
+      }
+  }
+
+  @media screen and (max-width:494px){
+    .section1-item1 img{
+        width:150px;
+    }
+    .section1-item1 h3 h4{
+        font-size: 10pt;
+    }
+    .section3-item2{
+        background-position: center;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    .section1-item1 h1{
+        font-size: 25pt;
+    }
+    .section1-item1 h3{
+        font-size: 17pt;
+    }
+
+    .section1-item1 h4{
+        font-size: 17pt;
+    }
+
+    .section1-item1 img{
+        width: 120px;
+    }
+    .section3-item1 img{
+        width: 200px;
+    }
+    .section3-item2 h3{
+        font-size: 20pt;
+    }
+    footer{
+        font-size: 15pt;
+    }
+    footer img{
+        width: 200px;
+    }
+
+    .middle{
+        font-size: 30pt;
+    }
+  }
